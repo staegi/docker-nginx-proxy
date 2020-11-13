@@ -9,5 +9,6 @@ These are the available environment variables and their default values:
     TARGET_HOST localhost
     TARGET_PORT 80
     TARGET_SCHEME http
+    CLIENT_MAX_BODY_SIZE 20M
 
 [1]: http://nginx.org

@@ -2,6 +2,8 @@ server {
     listen 80;
     listen [::]:80;
 
+    client_max_body_size ${CLIENT_MAX_BODY_SIZE};
+
     location / {
         proxy_pass       ${TARGET_SCHEME}://${TARGET_HOST}:${TARGET_PORT};
         proxy_redirect   off;
